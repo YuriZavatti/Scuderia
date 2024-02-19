@@ -93,7 +93,6 @@ img {
 
 .container {
 
-    max-width: 355px;
     margin-left: 1.5rem;
     margin-right: calc(1.5rem + 1rem);
 
@@ -372,7 +371,6 @@ img {
 
     display: table-cell;
     height: 100%;
-    max-height: 100vh;
     width: 100%;
     object-fit: cover;
     
@@ -456,7 +454,6 @@ img {
     display: table-cell;
     height: 100%;
     width: 100%;
-    max-width: 417.600px;
     object-fit: cover;
 
 }
@@ -465,7 +462,7 @@ img {
 
 .home__fsae {
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 20px;
 
 }
@@ -506,6 +503,7 @@ img {
 
     display: flex;
     height: 25vh;
+    justify-content: space-between;
 
 }
 
@@ -544,6 +542,8 @@ img {
     justify-content: center;
     height: 100%;
     margin-left: 15px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -558,6 +558,7 @@ img {
 .home__primeiro {
 
     margin-bottom: 20px;
+    margin-top: 20px;
 
 }
 
