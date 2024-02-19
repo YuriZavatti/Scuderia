@@ -397,6 +397,7 @@ img {
 
     font-size: calc(var(--h1-font-size) + 4rem);
     font-weight: var(--font-semi-bold);
+    margin-right: 3px;
 
 }
 
@@ -478,7 +479,7 @@ img {
 .title__main__fsae {
 
     font-size: calc(var(--h1-font-size) + 4rem);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-semi-bold);margin-right: 5px;
 
 }
 
@@ -574,7 +575,7 @@ img {
 
     font-size: calc(var(--h1-font-size) + 4rem);
     font-weight: var(--font-semi-bold);
-    margin-right: 10px;
+    margin-right: 5px;
 
 }
 
@@ -612,14 +613,50 @@ img {
 
 }
 
-.home__patrocinio__item img {
 
+.basico {
+
+    width: 40%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.patrocinio {
+
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     height: 100%;
     width: 100%;
-    max-width: 417.600px;
     object-fit: cover;
     justify-content: center;
     align-items: center;
 
 }
+
+.active {
+
+    opacity: 1;
+
+}
+.disable {
+
+    opacity: 0;
+
+}
+
+.home__patrocinio__item img {
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+

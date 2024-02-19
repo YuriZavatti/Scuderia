@@ -12,6 +12,8 @@ let scuderia = document.querySelector('.scuderia')
 
 let logo = document.querySelector('.logo')
 
+let menu__patrocinio = document.querySelector('.home__patrocinio')
+
 let scrolledPast200 = false;
 
 /* functions */
@@ -68,6 +70,11 @@ menu__selector.addEventListener('click', function() {
         logo.classList.add('display-out');
     }, 500);
 
+    /* Hidden patros */
+
+    menu__patrocinio.classList.remove('fade')
+    menu__patrocinio.classList.add('fade-out')
+
 });
 
 close__selector.addEventListener('click', function() {
@@ -123,6 +130,14 @@ close__selector.addEventListener('click', function() {
             scuderia.classList.remove('fade-out');
         }, 500);
     }
+
+    /* Show patros */
+
+    setTimeout(function() {
+        menu__patrocinio.classList.add('fade')
+        menu__patrocinio.classList.remove('fade-out')
+    }, 700);
+
 });
 
 /* Mudança Layout Header Scroll */ 
@@ -197,4 +212,218 @@ window.addEventListener('scroll', function() {
             }, 520);
         }
     }
-});  
+});
+
+/* Animação patrocinio 1*/
+
+function animateElement1(index) {
+
+    let patros = ['.p__1__1', '.p__1__2', '.p__1__3'].map(selector => document.querySelector(selector));
+
+    if (index >= patros.length) {
+
+        /* Reinicia a animação do começo */
+
+        patros[0].classList.remove('disable');
+        patros[0].classList.add('active');
+        animateElement1(0);
+        return;
+
+    }
+
+    let patro = patros[index];
+
+    gsap.from(patro, {
+
+        x: -200,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+
+        onComplete: function () {
+
+            gsap.to(patro, {
+
+                delay: 4,
+                y: 200,
+                duration: 1,
+                ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+
+                onComplete: function () {
+
+                    patro.classList.remove('active');
+                    patro.classList.add('disable');
+
+                    gsap.to(patro, {
+
+                        y: 0,
+                        x: 0,
+
+                    })
+
+                    if (index + 1 < patros.length) {
+
+                        patros[index + 1].classList.remove('disable');
+                        patros[index + 1].classList.add('active');
+                        animateElement1(index + 1);
+
+                    } 
+
+                    else {
+
+                        /* Reinicia a animação do começo */
+                        
+                        patros[0].classList.remove('disable');
+                        patros[0].classList.add('active');
+                        animateElement1(0);
+
+                    }
+                }
+            });
+        }
+    });
+}
+
+animateElement1(0);
+
+/* Animação patrocinio 2 */
+
+function animateElement2(index) {
+
+    let patros = ['.p__2__1', '.p__2__2', '.p__2__3'].map(selector => document.querySelector(selector));
+
+    if (index >= patros.length) {
+
+        /* Reinicia a animação do começo */
+
+        patros[0].classList.remove('disable');
+        patros[0].classList.add('active');
+        animateElement2(0);
+        return;
+
+    }
+
+    let patro = patros[index];
+
+    gsap.from(patro, {
+
+        y: -200,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+
+        onComplete: function () {
+
+            gsap.to(patro, {
+
+                delay: 4,
+                x: 200,
+                duration: 1,
+                ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+
+                onComplete: function () {
+
+                    patro.classList.remove('active');
+                    patro.classList.add('disable');
+
+                    gsap.to(patro, {
+
+                        y: 0,
+                        x: 0,
+
+                    })
+
+                    if (index + 1 < patros.length) {
+
+                        patros[index + 1].classList.remove('disable');
+                        patros[index + 1].classList.add('active');
+                        animateElement2(index + 1);
+
+                    } 
+
+                    else {
+
+                        /* Reinicia a animação do começo */
+                        
+                        patros[0].classList.remove('disable');
+                        patros[0].classList.add('active');
+                        animateElement2(0);
+
+                    }
+                }
+            });
+        }
+    });
+}
+
+animateElement2(0);
+
+/* Animação patrocinio 2 */
+
+function animateElement3(index) {
+
+    let patros = ['.p__3__1', '.p__3__2', '.p__3__3'].map(selector => document.querySelector(selector));
+
+    if (index >= patros.length) {
+
+        /* Reinicia a animação do começo */
+
+        patros[0].classList.remove('disable');
+        patros[0].classList.add('active');
+        animateElement3(0);
+        return;
+
+    }
+
+    let patro = patros[index];
+
+    gsap.from(patro, {
+
+        x: 200,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+
+        onComplete: function () {
+
+            gsap.to(patro, {
+
+                delay: 4,
+                y: -200,
+                duration: 1,
+                ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+
+                onComplete: function () {
+
+                    patro.classList.remove('active');
+                    patro.classList.add('disable');
+
+                    gsap.to(patro, {
+
+                        y: 0,
+                        x: 0,
+
+                    })
+
+                    if (index + 1 < patros.length) {
+
+                        patros[index + 1].classList.remove('disable');
+                        patros[index + 1].classList.add('active');
+                        animateElement3(index + 1);
+
+                    } 
+
+                    else {
+
+                        /* Reinicia a animação do começo */
+                        
+                        patros[0].classList.remove('disable');
+                        patros[0].classList.add('active');
+                        animateElement3(0);
+
+                    }
+                }
+            });
+        }
+    });
+}
+
+animateElement3(0);
+
