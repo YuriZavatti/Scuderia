@@ -14,7 +14,13 @@ let logo = document.querySelector('.logo')
 
 let menu__patrocinio = document.querySelector('.home__patrocinio')
 
+let menu__seja = document.querySelector('.home__seja__um')
+
+let main = document.querySelector('.main')
+
 let scrolledPast200 = false;
+
+let scrolledPast = false;
 
 /* functions */
 
@@ -70,10 +76,10 @@ menu__selector.addEventListener('click', function() {
         logo.classList.add('display-out');
     }, 500);
 
-    /* Hidden patros */
+    /* Hidden menu */
 
-    menu__patrocinio.classList.remove('fade')
-    menu__patrocinio.classList.add('fade-out')
+    main.classList.remove('fade')
+    main.classList.add('fade-out')
 
 });
 
@@ -130,13 +136,15 @@ close__selector.addEventListener('click', function() {
             scuderia.classList.remove('fade-out');
         }, 500);
     }
-
-    /* Show patros */
+    
+    /* Hidden menu */
 
     setTimeout(function() {
-        menu__patrocinio.classList.add('fade')
-        menu__patrocinio.classList.remove('fade-out')
+        main.classList.add('fade')
+        main.classList.remove('fade-out')
     }, 700);
+
+    
 
 });
 
@@ -427,3 +435,96 @@ function animateElement3(index) {
 
 animateElement3(0);
 
+/* Mudança primeiro */ 
+
+let criamos = document.querySelector('.criamos')
+
+let buscamos = document.querySelector('.buscamos')
+
+let alcançamos = document.querySelector('.alcançamos')
+
+let title__primeiro = document.querySelector('.title__main__primeiro')
+
+window.addEventListener('scroll', function() {
+
+    if (window.scrollY > 1350) {
+
+        if (!scrolledPast) {
+
+            scrolledPast = true;
+            
+            title__primeiro.classList.remove('fade')
+            title__primeiro.classList.add('fade-out')
+
+            criamos.classList.remove('fade')
+            criamos.classList.add('fade-out')
+
+            buscamos.classList.remove('fade')
+            buscamos.classList.add('fade-out')
+
+            alcançamos.classList.remove('fade')
+            alcançamos.classList.add('fade-out')
+            
+            setTimeout(function() {
+
+                title__primeiro.classList.add('fade')
+                title__primeiro.classList.remove('fade-out')
+
+                criamos.classList.add('fade')
+                criamos.classList.remove('fade-out')
+
+                buscamos.classList.add('fade')
+                buscamos.classList.remove('fade-out')
+
+                alcançamos.classList.add('fade')
+                alcançamos.classList.remove('fade-out')
+
+                criamos.innerHTML = 'Com'
+                buscamos.innerHTML = 'O apoio'
+                alcançamos.innerHTML = 'De vocês'
+
+            }, 700);
+        }
+    } 
+    
+    else {
+
+        if (scrolledPast) {
+
+            scrolledPast = false;
+
+            title__primeiro.classList.remove('fade')
+            title__primeiro.classList.add('fade-out')
+
+            criamos.classList.remove('fade')
+            criamos.classList.add('fade-out')
+
+            buscamos.classList.remove('fade')
+            buscamos.classList.add('fade-out')
+
+            alcançamos.classList.remove('fade')
+            alcançamos.classList.add('fade-out')
+            
+            setTimeout(function() {
+
+                title__primeiro.classList.add('fade')
+                title__primeiro.classList.remove('fade-out')
+
+                criamos.classList.add('fade')
+                criamos.classList.remove('fade-out')
+
+                buscamos.classList.add('fade')
+                buscamos.classList.remove('fade-out')
+
+                alcançamos.classList.add('fade')
+                alcançamos.classList.remove('fade-out')
+
+                criamos.innerHTML = 'Criamos'
+                buscamos.innerHTML = 'Buscamos'
+                alcançamos.innerHTML = 'Alcançamos'
+
+            }, 700);
+
+        }
+    }
+});
