@@ -709,8 +709,7 @@ img {
 
 .home__seja__um {
 
-    margin-top: 40px;
-    height: 220px;
+    height: 100vh;
 
 }
 
@@ -725,6 +724,7 @@ img {
 
 .home__seja__um__text {
 
+    padding-top: 200px;
     position: absolute;
     height: 100%;
     display: flex;
@@ -747,7 +747,7 @@ img {
     display: flex;
     align-items: flex-start;
     text-align: end;
-    font-size: calc(var(--h1-font-size) + 0.5rem);
+    font-size: calc(var(--h1-font-size) + 1rem);
     font-weight: var(--font-bold);
     max-width: 280px;
 
