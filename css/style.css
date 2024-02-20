@@ -672,7 +672,8 @@ img {
 
 .home__seja__um {
 
-    height: 190px;
+    margin-top: 40px;
+    height: 220px;
 
 }
 
@@ -688,6 +689,30 @@ img {
 .home__seja__um__text {
 
     position: absolute;
+    height: 100%;
+    display: flex;
+
+}
+
+.home__seja__um__text__text {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    font-size: 0.6rem;
+    padding: 5px 10px 0 0;
+
+}
+
+.home__seja__um__text__title {
+
+    display: flex;
+    align-items: flex-start;
+    text-align: end;
+    font-size: calc(var(--h1-font-size) + 0.5rem);
+    font-weight: var(--font-bold);
+    max-width: 280px;
 
 }
 
@@ -695,9 +720,8 @@ img {
 
     position: absolute;
     display: table-cell;
-    align-items: end;
     object-fit: cover;
     z-index: 10;
     height: 100%;
-
+    width: 100%;
 }
