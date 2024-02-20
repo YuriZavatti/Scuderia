@@ -465,11 +465,14 @@ img {
 
     margin-bottom: 20px;
     margin-top: 20px;
+    height: 140px;
 
 }
 
 .about__title__fsae {
 
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -503,7 +506,7 @@ img {
 .home__areas {
 
     display: flex;
-    height: 25vh;
+    height: 200px;
     justify-content: space-between;
 
 }
@@ -540,7 +543,7 @@ img {
     font-weight: var(--font-semi-bold);
     font-size: var(--h2-font-size);
     text-align: end;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
     margin-left: 15px;
     display: flex;
@@ -558,6 +561,7 @@ img {
 
 .home__primeiro {
 
+    height: 140px;
     margin-bottom: 20px;
     margin-top: 20px;
 
@@ -565,6 +569,8 @@ img {
 
 .about__title__primeiro {
 
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -598,7 +604,7 @@ img {
 
 .home__patrocinio {
 
-    height: 15vh;
+    height: 140px;
     margin-bottom: 20px;
 
 }
@@ -616,9 +622,9 @@ img {
 
 .basico {
 
-    width: 40%;
-    max-width: 250px;
-    height: 40%;
+    width: 100%;
+    max-width: 100px;
+    height: 50px;
     position: relative;
     display: flex;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
