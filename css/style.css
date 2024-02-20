@@ -365,6 +365,8 @@ img {
 .home__section {
 
     display: table;
+    height: 100vh;
+    margin-right: 15px;
 
 }
 
