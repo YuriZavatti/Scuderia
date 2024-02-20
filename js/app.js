@@ -447,7 +447,7 @@ let title__primeiro = document.querySelector('.title__main__primeiro')
 
 window.addEventListener('scroll', function() {
 
-    if (window.scrollY > 1350) {
+    if (window.scrollY > 1600) {
 
         if (!scrolledPast) {
 
