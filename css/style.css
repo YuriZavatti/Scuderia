@@ -365,14 +365,14 @@ img {
 .home__section {
 
     display: table;
-    height: 100vh;
+    width: 100vw;
 
 }
 
 .home__section img {
 
     display: table-cell;
-    height: 100%;
+    width: 100%;
     object-fit: cover;
     
 }
