@@ -527,8 +527,7 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
-    height: 100%;
-    max-height: 430px;
+    height: 100vh;
     justify-content: space-between;
 
 }
