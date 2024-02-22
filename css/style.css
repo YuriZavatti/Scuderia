@@ -366,16 +366,99 @@ img {
 
     display: table;
     height: 100vh;
+    width: 100vw;
+    position: relative;
 
 }
 
 .home__section img {
 
     display: table-cell;
+    position: absolute;
     height: 100%;
+    width: 100%;
     object-fit: cover;
+    z-index: 1;
     
 }
+
+.home__section__popup {
+
+    height: 85%;
+    width: calc(100vw - 64px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+
+}
+
+.section__popup {
+
+    width: 100%;
+    height: 65px;
+    max-height: 65px;
+    background-color: var(--second-color);
+    margin: 0 3px;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.home__section__button {
+
+    width: calc(100vw - 64px);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: var(--z-tooltip);
+    position: absolute;
+
+}
+
+.section__button1 {
+
+    height: 28px;
+    width: 60%;
+    background-color: var(--second-color);
+    display: flex;
+    align-items: flex-end;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-medium);
+    font-size: var(--smaller-font-size);
+    margin: 0 3px 35px 3px;
+    border-radius: 10px;
+
+}   
+
+.section__button2 {
+
+    height: 28px;
+    width: 40%;
+    background-color: var(--fourth-color);
+    display: flex;
+    align-items: flex-end;
+    color: var(--text-color-light);
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-medium);
+    font-size: var(--smaller-font-size);
+    margin: 0 3px 35px 3px;
+    border-radius: 10px;
+
+}
+
 
 /*========== Home about ==========*/
 
