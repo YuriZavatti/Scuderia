@@ -1044,3 +1044,76 @@ img {
     height: calc((100vw) / 2);
 
 }
+
+/*========== Footer ==========*/
+
+
+.first__footer {
+
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+
+}
+
+.vem__pro__formula {
+
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);  
+    height: 123px;
+
+
+}
+
+.footer__list {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 15px;
+
+}
+
+.footer__list__item {
+
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+
+}
+
+.second__footer {
+
+    height: 20%;
+    display: flex;
+    padding: 30px 0px;
+    border-top: solid 1px black;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer__social__list {
+
+    display: flex;
+    flex-direction: column;   
+
+}
+
+.footer__social__item {
+
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+
+}
+
+.footer__scuderia__ufabc {
+
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+
+}
