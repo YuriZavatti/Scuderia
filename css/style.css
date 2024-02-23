@@ -63,7 +63,6 @@ a:active, a:focus {
     -webkit-tap-highlight-color: transparent;
 }
 
-
 /*========== Basics ==========*/
 
 * {
@@ -879,6 +878,100 @@ img {
     z-index: 10;
     height: 100%;
     width: 100%;
+}
+
+
+.home__seja__section__popup {
+
+    height: 20%;
+    width: calc(100vw - 48px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
+
+}
+
+.seja__section__popup {
+
+    width: 100%;
+    height: 85px;
+    max-height: 65px;
+    background-color: var(--second-color);
+    margin: 0 3px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: var(--smaller-font-size2);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.seja__section__button {
+
+    width: calc(100vw - 48px);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: var(--z-tooltip);
+
+}
+
+.seja__section__button1 {
+
+    height: 28px;
+    width: 60%;
+    background-color: var(--second-color);
+    display: flex;
+    align-items: flex-end;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-semi-bold);
+    font-size: var(--smaller-font-size2);
+    margin: 0 3px 0 3px;
+    border-radius: 10px;
+
+}   
+
+.seja__section__button2 {
+
+    height: 28px;
+    width: 40%;
+    background-color: var(--fourth-color);
+    display: flex;
+    align-items: flex-end;
+    color: var(--text-color-light);
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-semi-bold);
+    font-size: var(--smaller-font-size2);
+    margin: 0 3px 0 3px;
+    border-radius: 10px;
+
+}
+
+
+.seja__section__text {
+
+    height: 60px;
+    width: calc(100vw - 48px);
+    margin: 0 24px;
+    border-radius: 10px;
+    font-size: var(--smaller-font-size2);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: justify;
+    position: absolute;
+
 }
 
 /*========== Home News ==========*/
