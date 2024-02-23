@@ -58,6 +58,11 @@
     background: var(--third-color);
 }
 
+a:active, a:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 /*========== Basics ==========*/
 
