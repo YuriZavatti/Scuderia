@@ -859,14 +859,13 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    margin-right: 15px;
 
 }
 
 .news__date {
 
-    width: calc((100vw - 15px) / 2);
-    height: calc((100vw - 15px) / 2);
+    width: calc((100vw) / 2);
+    height: calc((100vw) / 2);
     padding: 15px 0 15px 15px;
 
 }
@@ -904,7 +903,7 @@ img {
 
 .news__item {
 
-    width: calc((100vw - 15px) / 2);
-    height: calc((100vw - 15px) / 2);
+    width: calc((100vw) / 2);
+    height: calc((100vw) / 2);
 
 }
