@@ -42,19 +42,19 @@
             <div class="nav__menu__inner__l">
                 <ul class="nav__menu__inner__list">
                     <li class="nav__menu__inner__item">
-                        <a href="#">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                     <li class="nav__menu__inner__item">
-                        <a href="#">Áreas</a>
+                        <a href="#areas">Áreas</a>
                     </li>
                     <li class="nav__menu__inner__item">
-                        <a href="#">Patrocínios</a>
+                        <a href="#patrocinio">Patrocínios</a>
                     </li>
                     <li class="nav__menu__inner__item">
-                        <a href="#">Contato</a>
+                        <a href="#contato">Contato</a>
                     </li>
                     <li class="nav__menu__inner__item">
-                        <a href="#">Notícias</a>
+                        <a href="#noticias">Notícias</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@
 
         <!--HOME-->
 
-        <section class="home__section">
+        <section class="home__section" id="inicio">
 
             <img src="img/carro-frente-1.png" alt="Carro">
             
@@ -113,7 +113,7 @@
 
         <!--About-->
 
-        <section class="about__geral">
+        <section class="about__geral" id="sobre">
             <section class="home__about__back">
                 <div class="home__about container">
                     <div class="about__title">
@@ -144,7 +144,7 @@
 
         <!--Fsae-->
 
-        <div class="home__fsae__back">
+        <div class="home__fsae__back" id="formula__sae">
             <section class="home__fsae container">
                 <div class="about__title__fsae">
                     <div class="title__main__fsae">F</div>
@@ -159,7 +159,7 @@
 
         <!--Áreas-->
 
-        <section class="home__areas container">
+        <section class="home__areas container" id="areas">
             <div class="home__areas__title">
                 <div class="home__areas__title__inner">8</div>
                 <div class="home__areas__subtitle">Áreas</div>
@@ -178,7 +178,7 @@
 
         <!--1°-->
 
-        <section class="home__primeiro__back">
+        <section class="home__primeiro__back" id="patrocinio">
             <div class="home__primeiro container">
                 <div class="about__title__primeiro">
                     <div class="title__main__primeiro fade">1°</div>
@@ -219,7 +219,7 @@
 
         <!--Seja um patrocinador-->
 
-        <section class="home__seja__um__back">
+        <section class="home__seja__um__back" id="contato">
             <div class="home__seja__um fade">
                 <div class="home__seja__um__inner">
                     <div class="home__seja__um__text container">
@@ -264,7 +264,7 @@
 
         <!--News-->
 
-        <section class="home__news">
+        <section class="home__news" id="noticias">
 
             <div class="news__date">
 
@@ -323,31 +323,33 @@
 
         </section>
 
+        <footer class="footer container">
+
+            <div class="first__footer">
+                <div class="vem__pro__formula">#VemProFórmula</div>
+                <ul class="footer__list">
+                    <li class="footer__list__item"><a href="#sobre">Sobre</a></li>
+                    <li class="footer__list__item"><a href="#areas">Áreas</a></li>
+                    <li class="footer__list__item"><a href="#patrocinio">Patrocínios</a></li>
+                    <li class="footer__list__item"><a href="#contato">Contato</a></li>
+                    <li class="footer__list__item"><a href="#noticias">Notícias</a></li>
+                </ul>
+            </div>
+    
+            <div class="second__footer">
+                <ul class="footer__social__list">
+                    <li class="footer__social__item"><a href="">Linkedin</a></li>
+                    <li class="footer__social__item"><a href="">Facebook</a></li>
+                    <li class="footer__social__item"><a href="">Instagram</a></li>
+                </ul>
+                <div class="footer__scuderia__ufabc">© 2023 Scuderia UFABC</div>
+            </div>
+    
+        </footer>
+
     </main>
 
-    <footer class="footer container">
-
-        <div class="first__footer">
-            <div class="vem__pro__formula">#VemProFórmula</div>
-            <ul class="footer__list">
-                <li class="footer__list__item">Sobre</li>
-                <li class="footer__list__item">Áreas</li>
-                <li class="footer__list__item">Patrocínios</li>
-                <li class="footer__list__item">Contato</li>
-                <li class="footer__list__item">Notícias</li>
-            </ul>
-        </div>
-
-        <div class="second__footer">
-            <ul class="footer__social__list">
-                <li class="footer__social__item">Linkedin</li>
-                <li class="footer__social__item">Facebook</li>
-                <li class="footer__social__item">Instagram</li>
-            </ul>
-            <div class="footer__scuderia__ufabc">© 2023 Scuderia UFABC</div>
-        </div>
-
-    </footer>
+    
 
     <script src="js/gsap.min.js"></script>
 

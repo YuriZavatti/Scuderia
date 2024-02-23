@@ -276,6 +276,7 @@ img {
 .nav__menu__inner {
 
     position: fixed;
+    z-index: var(--z-tooltip);
 
 }
 
@@ -1086,6 +1087,13 @@ img {
 
 }
 
+.footer__list__item a{
+
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
 .second__footer {
 
     height: 20%;
@@ -1111,9 +1119,23 @@ img {
 
 }
 
+.footer__social__item a{
+
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
 .footer__scuderia__ufabc {
 
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
+
+}
+
+.footer__scuderia__ufabc a{
+
+    text-decoration: none;
+    color: var(--text-color);
 
 }
