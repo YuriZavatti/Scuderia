@@ -877,6 +877,8 @@ img {
     align-items: flex-start;
     font-size: calc(var(--h1-font-size) + 1rem);
     font-weight: var(--font-semi-bold);
+    height: 25%;
+    width: 100%;
 
 }
 
@@ -887,7 +889,8 @@ img {
     align-items: center;
     font-size: calc(var(--h3-font-size));
     font-weight: var(--font-semi-bold);
-    margin-bottom: 30px;
+    height: 10%;
+    width: 100%;
 
 }
 
@@ -898,6 +901,16 @@ img {
     align-items: flex-end;
     font-size: calc(var(--h1-font-size) + 3rem);
     font-weight: var(--font-semi-bold);
+    height: 65%;
+    width: 100%;
+
+}
+
+.news__date__year span{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 
 }
 
