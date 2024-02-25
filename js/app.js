@@ -530,3 +530,144 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+/* Animação popup1 */
+
+let popup1 = document.querySelector('.popup1');
+let popup1__text = document.querySelector('.popup1__text');
+
+popup1.classList.remove('fade-out');
+popup1.classList.add('fade');
+
+gsap.from(popup1, {
+
+    y: 50,
+    duration: 1,
+    ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+
+});
+
+setTimeout(function() {
+
+    popup1__text.classList.remove('fade-out');
+    popup1__text.classList.add('fade');
+
+    gsap.from(popup1__text, {
+
+        x: -50,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+    
+    });
+
+}, 1000);
+
+/* Animação popup2 */
+
+let popup2 = document.querySelector('.popup2');
+let popup2__text = document.querySelector('.popup2__text');
+
+
+
+setTimeout(function() {
+
+    popup2.classList.remove('fade-out');
+    popup2.classList.add('fade');
+
+    gsap.from(popup2, {
+
+        y: 50,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+    
+    });
+
+}, 200);
+
+setTimeout(function() {
+
+    popup2__text.classList.remove('fade-out');
+    popup2__text.classList.add('fade');
+
+    gsap.from(popup2__text, {
+
+        y: -50,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+    
+    });
+
+}, 1200);
+
+/* Animação popup3 */
+
+let popup3 = document.querySelector('.popup3');
+let popup3__text = document.querySelector('.popup3__text');
+
+setTimeout(function() {
+
+    popup3.classList.remove('fade-out');
+    popup3.classList.add('fade');
+
+    gsap.from(popup3, {
+
+        y: 50,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+    
+    });
+
+}, 400);
+
+setTimeout(function() {
+
+    popup3__text.classList.remove('fade-out');
+    popup3__text.classList.add('fade');
+
+    gsap.from(popup3__text, {
+
+        x: 50,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+    
+    });
+
+}, 1400);
+
+/* Animação button1 */
+
+let button1 = document.querySelector('.section__button1');
+
+setTimeout(function() {
+
+    button1.classList.remove('fade-out');
+    button1.classList.add('fade');
+
+    gsap.from(button1, {
+
+        x: -50,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+    
+    });
+
+}, 1400);
+
+/* Animação button2 */
+
+let button2 = document.querySelector('.section__button2');
+
+setTimeout(function() {
+
+    button2.classList.remove('fade-out');
+    button2.classList.add('fade');
+
+    gsap.from(button2, {
+
+        x: 50,
+        duration: 1,
+        ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
+    
+    });
+
+}, 1400);
