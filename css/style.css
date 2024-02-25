@@ -465,8 +465,18 @@ img {
     font-size: var(--smaller-font-size2);
     margin: 0 3px 0 3px;
     border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
 
 }   
+
+.section__button1 a{
+
+    text-decoration: none;
+    color: var(--text-color);
+
+}   
+
 
 .section__button2 {
 
@@ -484,6 +494,13 @@ img {
     border-radius: 10px;
 
 }
+
+.section__button2 a{
+
+    text-decoration: none;
+    color: var(--text-color-light);
+
+}   
 
 
 /*========== Home about ==========*/
