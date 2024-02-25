@@ -340,6 +340,14 @@ img {
     color: var(--text-color);
     font-weight: var(--font-semi-bold);
     font-size: var(--h1-font-size);
+    transition: 0.3s;
+
+}
+
+.nav__menu__inner__item a:hover{
+
+    color: var(--third-color);
+    transition: 0.3s;
 
 }
 
@@ -616,6 +624,20 @@ img {
 
 }
 
+.home__fsae a{
+
+    color: var(--text-color-light);
+    transition: 0.3s;
+
+}
+
+.home__fsae a:hover{
+
+    color: var(--third-color);
+    transition: 0.3s;
+
+}
+
 .about__title__fsae {
 
     
@@ -705,6 +727,14 @@ img {
 
     color: var(--text-color);
     margin-top: 3px;
+    transition: 0.3s;
+
+}
+
+.home__areas__item:hover {
+
+    color: var(--third-color);
+    transition: 0.3s;
 
 }
 
