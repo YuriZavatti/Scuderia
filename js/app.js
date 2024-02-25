@@ -83,70 +83,72 @@ menu__selector.addEventListener('click', function() {
 
 });
 
-close__selector.addEventListener('click', function() {
+var classes = document.querySelectorAll('.close, .home__menu, .sobre__menu, .sobre__areas, .sobre__patrocinio, .sobre__contato, .sobre__noticia');
 
-    /* Hidden close button */
+classes.forEach(function(classe) {
 
-    close__selector.classList.remove('fade');
-    close__selector.classList.add('fade-out');
+    classe.addEventListener('click', function() {
 
-    setTimeout(function() {
-        close__selector.classList.add('display-out');
-        menu__selector.classList.remove('display-out');
-    }, 500);
-    
-    setTimeout(function() {
-        menu__selector.classList.remove('fade-out');
-        menu__selector.classList.add('fade');
-    }, 650);
+        close__selector.classList.remove('fade');
+        close__selector.classList.add('fade-out');
 
-    /* Animation menu__main / menu__links */
+        setTimeout(function() {
+            close__selector.classList.add('display-out');
+            menu__selector.classList.remove('display-out');
+        }, 500);
 
-    menu__main.classList.toggle('nav__menu__inner__main-active');
-    menu__main.classList.toggle('nav__menu__inner__main-disable');
+        setTimeout(function() {
+            menu__selector.classList.remove('fade-out');
+            menu__selector.classList.add('fade');
+        }, 650);
 
-    setTimeout(function() {
-        menu__links.classList.toggle('nav__menu__inner__links-active');
-        menu__links.classList.toggle('nav__menu__inner__links-disable');
-    }, 100);
+        /* Animation menu__main / menu__links */
 
-    /* Scrollbar */
+        menu__main.classList.toggle('nav__menu__inner__main-active');
+        menu__main.classList.toggle('nav__menu__inner__main-disable');
 
-    body.classList.toggle('menu__close');
-    body.classList.toggle('menu__open');
+        setTimeout(function() {
+            menu__links.classList.toggle('nav__menu__inner__links-active');
+            menu__links.classList.toggle('nav__menu__inner__links-disable');
+        }, 100);
 
-    /* Logos */
+        /* Scrollbar */
 
-    if (window.pageYOffset > 200) {
-        logo.classList.remove('display-out');
-        logo.classList.add('display');
+        body.classList.toggle('menu__close');
+        body.classList.toggle('menu__open');
+
+        /* Logos */
+
+        if (window.pageYOffset > 200) {
+            logo.classList.remove('display-out');
+            logo.classList.add('display');
 
         setTimeout(function() {
             logo.classList.add('fade');
             logo.classList.remove('fade-out');
         }, 500);
-    }
+        }
 
-    else {
-        scuderia.classList.remove('display-out');
-        scuderia.classList.add('display');
+        else {
+            scuderia.classList.remove('display-out');
+            scuderia.classList.add('display');
 
         setTimeout(function() {
             scuderia.classList.add('fade');
             scuderia.classList.remove('fade-out');
         }, 500);
-    }
-    
-    /* Hidden menu */
+        }
 
-    setTimeout(function() {
-        main.classList.add('fade')
-        main.classList.remove('fade-out')
-    }, 700);
+        /* Hidden menu */
 
-    
+        setTimeout(function() {
+            main.classList.add('fade')
+            main.classList.remove('fade-out')
+        }, 700);
 
-});
+    })
+
+})
 
 /* Mudança Layout Header Scroll */ 
 
@@ -251,7 +253,7 @@ function animateElement1(index) {
 
             gsap.to(patro, {
 
-                delay: 4,
+                delay: 3,
                 y: 200,
                 duration: 1,
                 ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
@@ -322,7 +324,7 @@ function animateElement2(index) {
 
             gsap.to(patro, {
 
-                delay: 4,
+                delay: 3,
                 x: 200,
                 duration: 1,
                 ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
@@ -393,7 +395,7 @@ function animateElement3(index) {
 
             gsap.to(patro, {
 
-                delay: 4,
+                delay: 3,
                 y: -200,
                 duration: 1,
                 ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),

@@ -429,7 +429,7 @@ img {
     padding: 10px;
     border-radius: 10px;
     font-size: var(--smaller-font-size2);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-medium);
     color: var(--text-color);
     display: flex;
     align-items: flex-start;
