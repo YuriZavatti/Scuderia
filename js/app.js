@@ -554,7 +554,7 @@ setTimeout(function() {
 
     gsap.from(popup1__text, {
 
-        x: -20,
+        x: -5,
         duration: 1,
         ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
     
@@ -591,7 +591,7 @@ setTimeout(function() {
 
     gsap.from(popup2__text, {
 
-        y: -20,
+        x: -5,
         duration: 1,
         ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
     
@@ -626,7 +626,7 @@ setTimeout(function() {
 
     gsap.from(popup3__text, {
 
-        x: 20,
+        x: -5,
         duration: 1,
         ease: CustomEase.create("custom", "M0,0 C0.201,0 0.399,0.294 0.5,0.5 0.597,0.699 0.799,1 1,1 "),
     
